@@ -10,6 +10,6 @@ app.use(express.static(__dirname + '/dist/abcd'));
 // });
 
 app.get('/*',(req, res)=> {
-    res.sendFile('index.html', {root: 'dist/<name-on-package.json>/'})
+    res.sendFile('index.html', {root: 'dist/abcd/'})
   });
 app.listen(process.env.PORT || 8080);
